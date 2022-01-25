@@ -1,8 +1,6 @@
-import React from 'react';
 import { useState, useEffect } from 'react';
 import './HeaderNav.css';
 import psPlus from '../../pics/psPlus.png'
-import { cleanup } from '@testing-library/react';
 
 export const HeaderNav = () => {
 

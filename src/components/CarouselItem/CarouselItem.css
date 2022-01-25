@@ -1,0 +1,67 @@
+
+.carousel-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-transition{
+    transition: 0.1s ease-in-out;
+}
+
+.pic-size-width{
+    height: auto;
+    width: 85%;
+}
+
+.pic-size-height{
+    height: 85%;
+    width: auto;
+}
+
+.icon{
+    filter: invert(100%);
+}
+
+.carousel-item{
+    --itemWidth: 20vmin;
+    --itemHeight: 25vh;
+
+    width: var( --itemWidth );
+    height: var( --itemHeight );
+    margin: 0 0.5rem;
+    cursor: pointer;
+}
+
+.carousel-item .inner{
+    height: calc( var( --itemHeight ) - 30% ) ;
+    background: linear-gradient( to bottom, #112b5e, #001434 );
+}
+
+.carousel-item .inner h3{
+    height: 40%;
+    font-size: 2.5vmin;
+    text-align: center;
+}
+
+.carousel-item .inner .pic-wrapper{
+    height: 60%;
+}
+
+.carousel-item .arrow-wrapper{
+    height: calc( var( --itemHeight ) - 70% );
+}
+
+.carousel-item .arrow-wrapper i{
+    font-size: 3vmin;
+    opacity: 0;
+    margin-bottom: 0.7rem;
+}
+
+.carousel-item:hover{
+    border: solid 2px white;
+}
+
+.carousel-item:hover .arrow-wrapper i{
+    opacity: 1;
+}
