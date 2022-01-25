@@ -1,0 +1,87 @@
+.space{
+    margin: 0 0.3rem;
+}
+
+.header-text-size{
+    font-size: 3vmin;
+}
+
+.header-height{
+    height: 100%;
+}
+
+.header-flex{
+    display: flex;
+}
+
+.header-nav ul li{
+    width: 25%;
+    align-items: center;
+}
+
+.header-nav ul .ps-plus img{
+    width: auto;
+    height: 8vmin;
+}
+
+.header-nav ul .ps-plus a{
+    position: relative;
+    width: 8vmin;
+    height: 8vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: white;
+}   
+
+.header-nav ul .ps-plus a::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 1vmin solid transparent;
+    border-right: 1vmin solid transparent;
+    border-bottom: 2vmin solid white;
+    bottom: 10%;
+    left: 80%;
+}
+
+.header-nav ul .ps-plus a{
+    font-size: 5vmin;
+    color: #255792;
+}
+
+.header-nav ul .github a{
+    font-size: 8vmin;
+    color: white;
+}
+
+.header-nav ul .github .dot{
+    width: 3vmin;
+    height: 3vmin;
+    border-radius: 50%;
+    background: radial-gradient(#36b4e6, 70%, white);
+}
+
+.header-nav ul .github .me{
+    width: 5vmin;
+    height: 5vmin;
+    border-radius: 50%;
+    background-image: url(../../pics/ich.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.header-nav ul .resume a{
+    font-size: 7vmin;
+}
+
+.header-nav ul .resume > i{
+    color: #f3e141;
+}
+
+.header-nav ul .clock{
+    justify-content: center;
+}
