@@ -60,9 +60,9 @@ export const carouselItems = [
   ];
 
 
-export const CarouselItem = ( { title, pic, imgSize } ) => {
+export const CarouselItem = ( { title, pic, imgSize, getIndex } ) => {
     return (
-        <div className='carousel-item carousel-transition'>
+        <div onClick={ () => getIndex() } className='carousel-item carousel-transition'>
             <div className='inner'>
                 <h3 className='carousel-flex'>{ title }</h3>
                 <div className="pic-wrapper carousel-flex">
