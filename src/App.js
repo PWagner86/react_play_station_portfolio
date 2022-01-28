@@ -1,16 +1,15 @@
 import './App.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { CarouselItem, carouselItems } from './components/CarouselItem/CarouselItem';
 import { HeaderNav } from './components/HeaderNav/HeaderNav';
 import { Project, projects } from './components/Project/Project';
 import { Skills } from './components/Skills/Skills';
 import { Contact } from './components/Contact/Contact';
-import gear from './pics/cogs-solid.svg';
-import mail from './pics/envelope-regular.svg';
-
+import { StartScreen } from './components/StartScreen/StartScreen';
 
 const App = () => {
 
+  const [ startScreen, setStartScreen ] = useState( '' );
   const [ showProject, setShowProject ] = useState( false );
   const [ showSkills, setShowSkills ] = useState( false );
   const [ showContact, setShowContact ] = useState( false );
@@ -32,14 +31,21 @@ const App = () => {
     showProject ? setShowProject( false ) : showSkills ? setShowSkills( false ) : setShowContact( true );
   }
 
+  useEffect( () => {
+    setTimeout( () => setStartScreen( 'fade' ), 3000 );
+  });
+
 
   return (
     <div className='app'>
+      <StartScreen 
+        startScreen = { startScreen }
+      />
       <header>
         <HeaderNav />
       </header>
-      <nav className='carousel-wrapper app-flex'>
-        <div className="carousel app-flex">
+      <nav className='carousel-wrapper flex-center'>
+        <div className="carousel flex-center">
           {
             carouselItems.map( item => 
               <CarouselItem 
@@ -58,7 +64,7 @@ const App = () => {
           }
         </div>
       </nav>
-      <main className='project-wrapper app-flex'>
+      <main className='project-wrapper flex-center'>
           {
             showProject ? <Project 
             title = { projects[ index ].title }

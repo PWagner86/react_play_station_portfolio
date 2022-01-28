@@ -1,8 +1,5 @@
-
-.app-flex{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.app{
+  position: relative;
 }
 
 .app header{

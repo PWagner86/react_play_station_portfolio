@@ -1,0 +1,19 @@
+.start-screen{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( 145deg, #6b98cc, #112b5e, #001434);
+    z-index: 1;
+    transition: ease-out 1.5s;
+}
+
+.start-screen h1{
+    font-size: 15vmin;
+    font-weight: 900;
+    text-align: center;
+}
+
+.fade{
+    opacity: 0;
+    pointer-events: none;
+}
