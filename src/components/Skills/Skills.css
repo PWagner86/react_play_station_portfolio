@@ -1,0 +1,9 @@
+.skills .skill{
+    width: 20vmin;
+    height: 20vmin;
+}
+
+.skills .skill img{
+    width: 80%;
+    height: auto;
+}

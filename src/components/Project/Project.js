@@ -80,7 +80,7 @@ export const projects = [
         pic2: dino2,
         pic3: dino3,
         pic4: dino4,
-        picSize: 'project-pic-width'
+        picSize: 'project-pic-height'
     },
     {
         title: 'AXA Animation',
@@ -93,28 +93,27 @@ export const projects = [
         pic4: axa4,
         picSize: 'project-pic-height'
     },
-
 ];
 
 export const Project = ({ title, description, link, linkDescription, pic1, pic2, pic3, pic4, picSize }) => {
     return (
-        <div className='project'>
-            <h1 className='project-flex'>{ title }</h1>
-            <div className="description size project-flex">
+        <div className='project main-size'>
+            <h1 className='main-title'>{ title }</h1>
+            <div className="description size flex-center">
                 <h2>{ description }</h2>
                 <a href={ link } target='_blank'>{ linkDescription }</a>
             </div>
-            <div className="pic-wrapper size project-flex">
-                <div className="pic project-flex">
+            <div className="pic-wrapper size flex-center">
+                <div className="pic flex-center box">
                     <img className={ picSize } src={ pic1 } alt="Bild von Projekt" />
                 </div>
-                <div className="pic project-flex">
+                <div className="pic flex-center box">
                     <img className={ picSize } src={ pic2 } alt="Bild von Projekt" />
                 </div>
-                <div className="pic project-flex">
+                <div className="pic flex-center box">
                     <img className={ picSize } src={ pic3 } alt="Bild von Projekt" />
                 </div>
-                <div className="pic project-flex">
+                <div className="pic flex-center box">
                     <img className={ picSize } src={ pic4 } alt="Bild von Projekt" />
                 </div>
             </div>

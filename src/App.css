@@ -18,6 +18,38 @@
   width: min( 90%, 1600px, 90vw );
 }
 
-.app .project-wrapper{
+.app .project-wrapper,
+.app .skills,
+.app .contact{
   height: 55vh;
+}
+
+.box{
+  background: rgba(0, 0, 0, 0.527);
+  box-shadow: 0 0 10px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0.5rem;
+}
+
+.main-size{
+  height: 90%;
+  width: min( 90%, 1600px, 90vw );
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-title{
+  font-size: 6vmin;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

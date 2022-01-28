@@ -22,10 +22,10 @@ export const HeaderNav = () => {
 
     return (
         <nav className='header-nav header-height'>
-            <ul className='header-height header-flex'>
+            <ul className='header-height flex-center'>
                 <li className='ps-plus header-height header-flex'>
                     <img src={ psPlus } alt="PS-Plus Logo" />
-                    <a href="https://www.linkedin.com/in/peter-wagner1986/" target="_blank">
+                    <a className='flex-center' href="https://www.linkedin.com/in/peter-wagner1986/" target="_blank">
                         <i className="fab fa-linkedin-in"></i>
                     </a>
                 </li>
@@ -35,12 +35,12 @@ export const HeaderNav = () => {
                     <div className="me space"></div>
                     <h1 className='space header-text-size'>Peter Wagner</h1>
                 </li>
-                <li className='resume header-height header-flex'>
+                <li className='resume header-height flex-center'>
                     <a className='space' href="https://pwagner86.github.io/" target="_blank"><i className="fas fa-trophy"></i></a>
                     <i className="fas fa-star space header-text-size"></i>
                     <h2 className='space header-text-size'>Lebenslauf</h2>
                 </li>
-                <li className='clock header-height header-flex'>
+                <li className='clock header-height flex-center'>
                     <p className='header-text-size'>{ `${ hour < 10 ? `0${ hour }` : hour }:${ minutes < 10 ? `0${ minutes }` : minutes }` }</p>
                 </li>
             </ul>

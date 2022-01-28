@@ -28,9 +28,6 @@
     position: relative;
     width: 8vmin;
     height: 8vmin;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-radius: 50%;
     background-color: white;
 }   
@@ -80,8 +77,4 @@
 
 .header-nav ul .resume > i{
     color: #f3e141;
-}
-
-.header-nav ul .clock{
-    justify-content: center;
 }
