@@ -2,6 +2,7 @@ import './App.css';
 import { useState, useEffect } from 'react';
 import { CarouselItem, carouselItems } from './components/CarouselItem/CarouselItem';
 import { HeaderNav } from './components/HeaderNav/HeaderNav';
+import { Canvas } from './components/Canvas/Canvas';
 import { Project, projects } from './components/Project/Project';
 import { Skills } from './components/Skills/Skills';
 import { Contact } from './components/Contact/Contact';
@@ -33,7 +34,7 @@ const App = () => {
 
   useEffect( () => {
     setTimeout( () => setStartScreen( 'fade' ), 3000 );
-  });
+  }, [] );
 
 
   return (
@@ -41,6 +42,7 @@ const App = () => {
       <StartScreen 
         startScreen = { startScreen }
       />
+      <Canvas />
       <header>
         <HeaderNav />
       </header>
