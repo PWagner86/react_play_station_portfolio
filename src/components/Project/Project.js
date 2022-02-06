@@ -51,9 +51,9 @@ export const projects = [
     },
     {
         title: 'Create your Dashboard',
-        description: 'Der Benutzer kann sich registrieren und einloggen. Sobald man eingeloggt ist, kommt man auf sein Dashboard. Dort hat man verschiedene Optionen zur Auswahl. Man kann Farbschema, Layout, Destination, usw. ändern. Die Änderungen werden in einer Datenbank gespeichert. Im Dashboard werden Wetterdaten sowie Newsartikel mit einem AJAX Request geladen. Beide Requests werden nach einer gewissen Zeit neu versendet um auf dem aktuellen Stand zu bleiben.',
-        link: 'https://github.com/PWagner86/create_your_dashboard',
-        linkDescription: 'Github-Repo',
+        description: 'Der Benutzer kann sich registrieren und einloggen. Sobald man eingeloggt ist, kommt man auf sein Dashboard. Dort hat man verschiedene Optionen zur Auswahl. Man kann Farbschema, Layout, Destination, usw. ändern. Die Änderungen werden in einer Datenbank gespeichert. Im Dashboard werden Wetterdaten sowie Newsartikel mit einem AJAX Request geladen. Beide Requests werden nach einer gewissen Zeit neu versendet um auf dem aktuellen Stand zu bleiben. (News Api funktioniert nicht, da ich die Gratisversion benutze und diese nur für Development funktioniert.)',
+        link: 'https://create-your-dashboard.herokuapp.com/',
+        linkDescription: 'Zur App',
         pic1: dash1,
         pic2: dash2,
         pic3: dash3,
